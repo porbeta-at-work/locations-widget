@@ -29,12 +29,6 @@ locations-widget/
    ```
    Opens http://localhost:3000 with the full development environment
 
-3. Validate exported widgets:
-   ```bash
-   npm run validate
-   ```
-   Opens http://localhost:3001 to test widgets in a Drupal-like environment
-
 ## Building for Drupal
 
 When you're ready to deploy your changes to Drupal:
@@ -50,19 +44,6 @@ This generates multiple options in the `dist/` folder:
 - **`widget-html.html`** - HTML structure only (for separate CSS/JS integration)
 - **`widget-styles.css`** - CSS styling (for theme integration)
 - **`widget-script.js`** - JavaScript functionality (for theme assets)
-
-## Validation & Testing
-
-Use the validation environment to ensure your exports match the original:
-
-```bash
-npm run validate
-```
-
-This opens a test page where you can:
-- Compare your exported widgets with the [original site](https://training.archives.gov/locations)
-- Test both complete and minimal widget versions
-- Verify functionality in a Drupal-like environment
 
 ## Features
 

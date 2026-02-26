@@ -5,9 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "npx live-server --port=3000",
-    "build": "node scripts/build-drupal.js",
-    "validate": "npx live-server --port=3001 --open=validate.html",
-    "install-deps": "npm install"
+    "build": "node scripts/build-drupal.js"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
