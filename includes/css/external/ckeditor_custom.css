@@ -1,0 +1,20 @@
+.cke_reset_all i.fa {    display: inline-block;
+    font-family: FontAwesome;
+      font-feature-settings: normal;
+        font-kerning: auto;
+          font-language-override: normal;
+            font-size: inherit;
+              font-size-adjust: none;
+                font-stretch: normal;
+                  font-style: normal;
+                    font-synthesis: weight style;
+                      font-variant: normal;
+                        font-weight: normal;
+                          line-height: 1;}
+
+
+                        
+#imce-content #edit-thumbnails input{
+  vertical-align: middle;
+  position: relative;
+}

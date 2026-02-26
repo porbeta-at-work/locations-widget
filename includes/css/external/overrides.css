@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+#block-views-sidebars-block {
+  padding-right: 0px !important;
+}
+
+#mega-footer i.fa-external-link:before {
+  display: none;
+}
+
+.trusted-external i.fa-external-link:before {
+  display: none;
+}
+
+a[href^="tel"] i.fa-external-link {
+  display: none;
+}
+
+#social-media .facebook::before {
+  content: "";
+  padding: 0;
+}
+
+#social-media .twitter::before {
+  content: "";
+  padding: 0;
+}
+
+#social-media .youtube::before {
+  content: "";
+  padding: 0;
+}
+
+#top-links .addthisLink .fa-external-link {
+  display: none;
+}
+
+//todays doc block
+#todays-doc a i.fa-external-link:before {
+  display: none;
+}
+
+#todays-doc a i.fa-external-link {
+  display: none;
+}
+
+#title-bar {
+  color: #fff;
+}
+
+#title-bar h1 {
+  color: #fff;
+}
+
+.carousel .fa-play {
+  display: none;
+}
+
+#sidebar .block .panel-heading h2 {
+  border-bottom: 0px none !important;
+}
+
+.nwidget .widget-placeholder {
+  display: none;
+}
+
+//todays doc block
+.ntodays-doc i.fa-external-link:before {
+  display: none;
+}
+
+// overrides until table widget is 100%
+
+/* line 223, ../sass/_page-elements.scss */
+table>tbody>tr:nth-child(2n+1)>td {
+  background-color: #f9f9f9;
+}
+
+/* line 226, ../sass/_page-elements.scss */
+.table>table thead>tr>th,
+.table>thead>tr>td,
+.table table>tbody>tr>th,
+.table>tbody>tr>td,
+.table>table tfoot>tr>th,
+.table>tfoot>tr>td {
+  padding: 8px;
+}
+
+/* line 229, ../sass/_page-elements.scss */
+table td,
+.table-responsive table td {
+  padding: 8px;
+}
+
+/* line 232, ../sass/_page-elements.scss */
+table th {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.feedburnerFeedBlock #creditfooter {
+  display: none;
+}
+
+/* Accordions need to work in sidebar as well as main-col */
+#page-body .panel-group .panel-heading h3.panel-title {
+  font-size: 1.25em;
+}
+
+#page-body .panel-group .panel-heading:hover {
+  background-color: #efece3;
+}
+
+#page-body .panel-group .panel-heading .panel-title>a {
+  display: inline-block;
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
+}
+
+#page-body .panel-group .panel-heading .panel-title>a:active,
+#main-col .panel-group .panel-heading .panel-title>a:focus {
+  outline: 0 none;
+  text-decoration: none;
+}
+
+a.enlarge:focus{
+  border:2px solid black;  
+}
+
+#page-body .panel-group .panel-heading .panel-title>a:hover {
+  color: #555555;
+  text-decoration: none;
+}
+
+#page-body .panel-group .panel-title a i.fa-plus-circle {
+  display: none;
+}
+
+#page-body .panel-group .panel-title a i.fa-minus-circle {
+  display: inline;
+}
+
+#page-body .panel-group .panel-title a.collapsed i.fa-plus-circle {
+  display: inline;
+}
+
+#page-body .panel-group .panel-title a.collapsed i.fa-minus-circle {
+  display: none;
+}
+
+#page-body div.vertical-tabs .vertical-tabs-list {
+  margin: 0 –100% -1px 0;
+}
+
+#page-body div.vertical-tabs ul li.vertical-tab-button {
+  background-color: #ccc;
+  background-image: none;
+  padding-left: 0;
+  padding-bottom: 0;
+  border-right: 1px solid #aaa;
+}
+
+#page-body div.vertical-tabs ul li.vertical-tab-button.active {
+  background-color: #fff;
+  border-right: none;
+}
+
+#page-body div.vertical-tabs ul.nav-tabs>li {
+  float: none;
+}
+
+#page-body div.vertical-tabs ul.nav-tabs>li>a {
+  border-radius: 0;
+  margin-right: 0;
+}
+
+#page-body ul.tabs--primary li {
+  background: none;
+  background-image: none;
+}
+
+.page-node-edit .last-update-wrapper {
+  display: none;
+}
+
+/*#page-footer {
+  background-color: #fff;
+} */
+.last-update-wrapper {
+  margin: 0;
+  padding: 0 20px 20px 20px;
+  background-color: #fff;
+  border-left: 1px dotted #a4abb3 !important;
+  border-right: 1px dotted #a4abb3 !important;
+}
+
+#last-update {
+  margin: 0;
+}
+
+.date-display-single .date-display-range {
+  clear: none;
+  display: inline;
+  width: auto;
+}
+
+#page-body a.trusted-external i.fa {
+  width: 0em;
+  display: none;
+}
+
+fieldset.webform-component-select-table {
+  height: auto !important;
+  overflow: visible;
+}
+
+fieldset.webform-component-select-table .webform-component-select-wrapper {
+  max-height: none !important;
+}
+
+/* fix link color in slideshow */
+.nslideshow .scrim-dark a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* don't sytle anchor as links */
+a[name]:not([href]) {
+  text-decoration: inherit !important;
+  color: inherit !important;
+  font-size: inherit !important;
+}
+
+.webform-client-form input[type="radio"]{
+  position:relative !important;
+  width: auto !important;
+  margin-right: 0.5em;
+}
+
+.page-node-39995 a.back-to-top{
+  display:none !important;
+}
+
+/*remove to give space to chat */
+.front a.back-to-top{
+  display:none !important;
+}

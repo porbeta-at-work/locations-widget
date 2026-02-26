@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+
+#canvas { display: block !important; }
+
+.canvas-full-width { width: 100%; }
+
+.custom-hide { display: none !important; }
+

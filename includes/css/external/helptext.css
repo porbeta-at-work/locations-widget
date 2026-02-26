@@ -1,0 +1,18 @@
+.hover-help {
+  margin: 6px;
+  color: #999;
+  font-size: 16px;
+}
+.description {
+    z-index: 3000;
+    position: relative;
+    left: 0px;
+    min-width: 200px; 
+    width: 90%;
+    background: #f3f3f3;
+    padding: 8px;
+    margin: 10px 0px;
+    border: 2px solid #1181c5;
+    border-radius: 5px;
+
+}

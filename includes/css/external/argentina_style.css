@@ -1,0 +1,245 @@
+
+#edit-fulltext .panel-body{  
+  display: flex; /* or inline-flex */
+  flex-flow: row nowrap; /* is default: columns along the main-axis (row) and no wrapping to next lines */
+  align-items: flex-end; /* bottom */
+}
+
+#edit-fulltext .panel-body .form-type-textfield{
+  margin:0px;
+}
+
+#argentina-form label{
+  display:block;
+  font-weight:bold;  
+  float:left;  
+}
+
+
+#argentina-form input[type='text'] {    
+  display:block;
+  float:left;
+  border: 1px solid #5b616b;
+  padding: 0px .2em !important;
+  border-radius:0px;
+  font-size: 1.5rem;
+  height: 3rem;
+  
+}
+
+#argentina-form #edit-filters input[type='text'] {
+  height:2rem;
+  margin-bottom:3px;
+}
+
+/*#argentina-form input.jfkfulltextsubmit{*/
+#argentina-form input[type='submit'] {
+  border-radius:0px !important;;
+  background-color: #0071bc;
+  border: 0;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;  
+  font-size: 1.5rem;
+  height: 3rem;
+  padding: 0px .7em !important;
+  border-bottom-right-radius:5px !important;
+  border-top-right-radius:5px !important;
+  
+}
+
+#argentina-form #edit-filters input[type='submit']{
+  border-bottom-left-radius:5px !important;
+  border-top-left-radius:5px !important;
+  font-size:1.3rem;
+}
+#argentina-form #edit-filters input[type='text'] {
+  font-size:1.3rem;
+}
+
+#argentina-form input[type='submit']:hover{
+  background-color:#205493;
+}
+
+#argentina-form label:after{
+  content: ':';
+}
+
+#argentina-form #edit-filters .fieldset-wrapper{  
+  width:100%;  
+  
+}
+
+#argentina-form #edit-filters .fieldset-wrapper .form-item{
+  
+  
+}
+
+#argentina-form #edit-filters label{    
+  display:block;  
+  min-width:120px;
+  float:left;
+  text-align:right;
+  
+}
+
+#argentina-form #edit-filters input[type='text'] {    
+  display:block;
+  float:left;
+  width:80%;
+  
+}
+
+#argentina-form .default-sort th.active a img{
+  display:none;
+}
+
+#argentina-form .table-responsive{  
+  display:block;
+  overflow-x: scroll;
+}
+
+#argentina-form  fieldset a{
+  padding-right:15px;  
+  background: url('../icons/arrow-angle-up.png') right 6px no-repeat;
+  background-size: 10px 10px;
+}
+
+#argentina-form fieldset.collapsed legend a{
+  background: url('../icons/angle-arrow-down-primary.svg') right 6px no-repeat;
+  background-size: 10px 10px;
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+  #argentina-form #edit-filters label {       
+    text-align:left;
+  }
+
+}
+
+#argentina-form fieldset label{
+  margin-right:5px;
+}
+#argentina-form fieldset#edit-filters{
+  margin-bottom:40px;
+}
+
+#argentina-form fieldset#edit-filters .form-item{
+  display:block;
+  clear:both;
+}
+
+/*
+#argentina-form fieldset.collapsed legend a {
+  padding-right: 15px;
+  background: url(../images/angle-arrow-down-primary.svg) right 6px no-repeat;
+  background-size: 10px 10px;
+}
+*/
+
+#argentina-form .form-item {
+  
+}
+
+#argentina-form .form-item .tooltiptext{
+  visibility: hidden;
+  opacity: 0;
+  max-width: 500px;
+  background-color: #0071bc;
+  color: white;
+  text-align: left;
+  
+  border-radius: 6px;
+  padding: 15px 15px;
+  
+  left:150px;
+  /*
+  left: 30%;
+  -webkit-transform: translateX(-30%);
+  transform: translateX(-30%);
+  */
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;  
+  margin-top:45px;
+  border-top-left-radius: 0px;
+  /*
+  opacity: 0;
+  transition: opacity .6;
+  */
+  
+}
+#argentina-form .form-item-search span.tooltiptext{
+  left:40px;
+  margin-top:85px;  
+}
+
+@media only screen and (max-width: 640px) {  
+  #argentina-form .form-item .tooltiptext{
+    left:20px;
+    margin-top:70px;
+  }
+}
+/* Draw arrow tip */
+#argentina-form .form-item .tooltiptext:before, .jfkfulltextsearch .form-item .tooltiptext:before {
+  content:'';
+    display:block;
+    
+    position:absolute;
+
+    /*
+    left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+    */
+    border-left: 0px solid transparent;
+    border-right: 10px solid transparent;    
+    border-bottom: 10px solid #0071bc;
+    /*text-align:center;*/
+    /*
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top:8px solid #0071bc;
+    */
+
+    /* arraw left 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right:8px solid #0071bc;
+    */
+    
+    top:-10px;	
+    left:0px;
+}
+
+
+/*
+#argentina-form .form-item:hover .tooltiptext {
+  visibility: visible;
+}
+*/
+
+#argentina-form .form-item input:hover + .tooltiptext, .jfkfulltextsearch .form-item input:hover{
+  visibility: visible;
+  transition: opacity .5s;
+  opacity: 1;
+  
+  /*
+  opacity: 0;
+  transition: opacity .6;
+  */
+  
+}
+
+.action-div{
+  text-align:right;
+  clear:both;
+}
+
+.action-div #edit-reset, .action-div #edit-submit--2{
+  margin-right:5px;
+}

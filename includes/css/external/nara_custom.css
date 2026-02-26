@@ -1,0 +1,12 @@
+.content form.node-news-form .field-type-text-with-summary,
+.content form.node-news-form .field-name-field-col-b,
+.content form.node-news-form .field-name-field-detailed-descripotion
+{
+    display:none;
+}
+
+
+#edit-field-page-name div.description{
+  display:block !important;
+  z-index:0;
+}

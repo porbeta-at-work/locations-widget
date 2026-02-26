@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Us | National Archives</title>
+
+    <!-- CSS files from ./css/external in page.html order -->
+    <link rel="stylesheet" href="includes/css/external/1.css">
+
+    <link rel="stylesheet" href="includes/css/external/system.base.css">
+    <link rel="stylesheet" href="includes/css/external/contextual.css">
+    <link rel="stylesheet" href="includes/css/external/font-awesome.min.css">
+    <link rel="stylesheet" href="includes/css/external/helptext.css">
+    <link rel="stylesheet" href="includes/css/external/ckeditor_custom.css">
+    <link rel="stylesheet" href="includes/css/external/argentina_style.css">
+    <link rel="stylesheet" href="includes/css/external/calendar_multiday.css">
+    <link rel="stylesheet" href="includes/css/external/date_repeat_field.css">
+    <link rel="stylesheet" href="includes/css/external/field.css">
+    <link rel="stylesheet" href="includes/css/external/findingaid.css">
+    <link rel="stylesheet" href="includes/css/external/explorer_landing.css">
+    <link rel="stylesheet" href="includes/css/external/nara-api-style.css">
+    <link rel="stylesheet" href="includes/css/external/documentapp.css">
+    <link rel="stylesheet" href="includes/css/external/custom.css">
+    <link rel="stylesheet" href="includes/css/external/timeline.css">
+    <link rel="stylesheet" href="includes/css/external/node.css">
+    <link rel="stylesheet" href="includes/css/external/user-alert.css">
+    <link rel="stylesheet" href="includes/css/external/varnishpurge.css">
+    <link rel="stylesheet" href="includes/css/external/views.css">
+    <link rel="stylesheet" href="includes/css/external/environment_indicator.css">
+    <link rel="stylesheet" href="includes/css/external/ckeditor.css">
+    <link rel="stylesheet" href="includes/css/external/admin_menu.css">
+    <link rel="stylesheet" href="includes/css/external/admin_menu_toolbar.css">
+
+    <link rel="stylesheet" href="includes/css/external/ctools.css">
+
+    <link rel="stylesheet" href="includes/css/external/workbench.block.css">
+    <link rel="stylesheet" href="includes/css/external/nara_custom.css">
+
+
+    <link rel="stylesheet" href="includes/css/external/jquery.fancybox.css">
+    <link rel="stylesheet" href="includes/css/external/jquery.fancybox-thumbs.css">
+    <link rel="stylesheet" href="includes/css/external/bootstrap.min.css">
+    <link rel="stylesheet" href="includes/css/external/styles.css">
+    <link rel="stylesheet" href="includes/css/external/vertical-tabs.css">
+    <link rel="stylesheet" href="includes/css/external/overrides.css">
+    <link rel="stylesheet" href="includes/css/external/mediagallery.css">
+    <link rel="stylesheet" href="includes/css/external/dataTables.bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="includes/css/external/2.css">
+    <link rel="stylesheet" href="includes/css/external/3.css">
+    <link rel="stylesheet" href="includes/css/external/4.css">
+
+
+    <!-- Table Sortable Styles from page.html -->
+    <style type="text/css">
+        th .sortable a.sort-active {
+            color: #ffffff;
+        }
+
+        table.sortable th.sortable a.active {
+            color: #ffffff;
+        }
+
+        table.sortable th.sortable a {
+            color: #ffffff;
+        }
+
+        table.sortable th a.sortheader {
+            color: #ffffff;
+        }
+
+        /* visited link */
+        table.sortable th.sortable a:visited {
+            color: #ffffff;
+        }
+
+        /* mouse over link */
+        table.sortable th.sortable a:hover {
+            color: #ffffff;
+        }
+
+        /* selected link */
+        table.sortable th.sortable a:active {
+            color: #ffffff;
+        }
+
+        .section-theme th a {
+            color: #ffffff;
+        }
+
+        table.sortable tr:nth-of-type(odd) {
+            background-color: #F5F5F5;
+        }
+
+        table.sortable-onload-1 tr:nth-of-type(odd) {
+            background-color: #F5F5F5;
+        }
+
+        table.sortable-onload-0 tr:nth-of-type(odd) {
+            background-color: #F5F5F5;
+        }
+    </style>
+
+
+    <!-- Section Theme Styles from page.html -->
+    <style>
+        .section-theme #title-bar {
+            background: #981B1E url("https://training.archives.gov/files/global-images/section-headers/locations.png") no-repeat center right;
+        }
+
+        .section-theme #mega-footer>h2 {
+            background: #981B1E
+        }
+
+        .section-theme #title-bar .breadcrumb {
+            background-color: #cd2427;
+        }
+
+        .section-theme th {
+            background-color: #981B1E !important;
+        }
+    </style>
+
+    <!-- HTML5 element support for IE6-8 -->
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Core jQuery and Drupal Scripts -->
+    <script src="https://training.archives.gov/sites/all/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+    <script src="https://training.archives.gov/misc/jquery-extend-3.4.0.js?v=1.7.2"></script>
+    <script src="https://training.archives.gov/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.7.2"></script>
+    <script src="https://training.archives.gov/misc/jquery.once.js?v=1.2"></script>
+    <script src="https://training.archives.gov/misc/drupal.js?ta1x30"></script>
+    
+    <!-- Module Scripts -->
+    <script src="https://training.archives.gov/modules/contextual/contextual.js?v=1.0"></script>
+    <script src="https://training.archives.gov/sites/all/modules/custom/archives_ui/scripts/helptext.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/modules/custom/argentina/js/script.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/modules/custom/findingaid_stat/js/script.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/modules/custom/nara_catalog/js/script.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/modules/custom/nara_document_app/js/script.js?ta1x30"></script>
+    <!-- Removed problematic scripts for local development:
+         - user-alert-override.js (AJAX calls fail locally)
+         - environment_indicator scripts (not needed locally)
+         - admin_menu scripts (not needed locally) -->
+    
+    <!-- NARA Custom Scripts -->
+    <script src="https://training.archives.gov/sites/all/modules/custom/nara_custom/js/nara_custom.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/modules/custom/varnish_purge/js/varnishpurge.js?ta1x30"></script>
+
+    <!-- Bootstrap Components -->
+    <script src="https://training.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/affix.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/alert.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/button.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/carousel.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/collapse.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/dropdown.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/modal.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/tooltip.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/popover.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/scrollspy.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/tab.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/assets/javascripts/bootstrap/transition.js?ta1x30"></script>
+
+    <!-- NARA Theme Scripts -->
+    <script src="https://training.archives.gov/sites/all/themes/nara/scripts/jPanelMenu.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/scripts/jRespond.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/scripts/matchHeight.min.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/scripts/jquery.fancybox.pack.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/scripts/toc.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/scripts/jquery.dataTables.min.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/scripts/dataTables.bootstrap.min.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/scripts/locations.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/scripts/scripts.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/scripts/jquery.scrollTo.js?ta1x30"></script>
+    <script src="https://training.archives.gov/sites/all/themes/nara/scripts/mediagallery.js?ta1x30"></script>
+
+    <!-- Drupal Settings - simplified for local development -->
+    <script>
+    // Initialize Drupal object if it doesn't exist
+    if (typeof Drupal === 'undefined') {
+        window.Drupal = { settings: {}, behaviors: {} };
+    }
+    // Add minimal settings to prevent errors
+    jQuery.extend(Drupal.settings, { 
+        "basePath": "/", 
+        "pathPrefix": "", 
+        "bootstrap": { 
+            "anchorsFix": 1, 
+            "anchorsSmoothScrolling": 1, 
+            "formHasError": 1, 
+            "popoverEnabled": 1, 
+            "tooltipEnabled": 1 
+        } 
+    });
+    </script>
+
+    <!-- Sortable Table Scripts - removed as they cause 404 errors locally -->
+
+    <!-- Google Analytics -->
+    <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L"></script>
+    
+    <!-- Fancybox Scripts - removed as they cause 404 errors locally -->
+
+    <!-- Bootstrap Script - removed as it was causing triggerAutoclose errors -->
+
+    <!-- Error handling for local development -->
+    <script>
+    // Add error handling to prevent script errors from breaking the page
+    window.addEventListener('error', function(e) {
+        console.log('JavaScript error caught (local development):', e.message);
+        return true; // Prevent error from propagating
+    });
+    
+    // Override console.error temporarily to catch Drupal attachment errors
+    var originalError = console.error;
+    console.error = function() {
+        if (arguments[0] && typeof arguments[0] === 'string' && arguments[0].includes('triggerAutoclose')) {
+            console.log('Suppressed triggerAutoclose error for local development');
+            return;
+        }
+        originalError.apply(console, arguments);
+    };
+    
+    console.log('Locations widget loaded - local development mode');
+    </script>
+
+    
+</head>
+
+<body id="page-body">
+    <div id="main-content" class="container locations-widget-container">
+        <div aria-hidden="true" id="locations-list">&nbsp;</div>
+        <!-- Shared eyebrow style -->
+        <style type="text/css">
+            .eyebrow-label {
+                background: rgba(255, 255, 255, 0.85);
+                color: #0f172a;
+                font-weight: 700;
+                padding: .25rem .6rem;
+                border-radius: 4px;
+                font-size: .85rem;
+                letter-spacing: .03em;
+                text-transform: uppercase;
+            }
+        </style>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default box box-lg clearfix" id="locator-map">
+                    <div class="panel-heading">
+                        <h2>Accessibility, Hours, Directions &amp; Details: Select from our Nationwide Network of
+                            Facilities</h2>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="clearfix" id="filters">
+                                    <li><strong>Show me:</strong></li>
+                                    <li class="active"><a data-filter="all" href="#" id="all-filter_static">All Locations</a></li>
+                                    <li><a data-filter="research" href="#research-facilities"
+                                            id="research-filter_static"><span class="glyphicon glyphicon-search"></span>
+                                            Research Facilities</a></li>
+                                    <li><a data-filter="records" href="#frc" id="frc-filter_static"><span
+                                                class="glyphicon glyphicon-folder-open"></span> Federal Records
+                                            Centers</a></li>
+                                    <li><a data-filter="library" href="#presidential-libraries"
+                                            id="presidential-libraries-filter_static"><span
+                                                class="glyphicon glyphicon-book"></span> Presidential Libraries</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <section id="facility-index">&nbsp;</section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                (async function ($) {
+                    var response = await fetch('/includes/sites/all/modules/custom/nwsync/locations.js');
+                    var locationsData = await response.json();
+
+                    var anchor = window.location.href.replace(/.*#/, '');
+                    var resultList = [];
+
+                    var $all = $('a#all-filter_static');
+                    var $research = $('a#research-filter_static');
+                    var $frc = $('a#frc-filter_static');
+                    var $pl = $('a#presidential-libraries-filter_static');
+                    var $facilityIndex = $('section#facility-index');
+
+                    var clearAllFilters = function () {
+                        $all.parent().removeClass('active');
+                        $research.parent().removeClass('active');
+                        $frc.parent().removeClass('active');
+                        $pl.parent().removeClass('active');
+                    };
+
+                    var checkIfFacilityType = function (item, typeName) {
+                        var facilityTypeList = item['facility_type'] || [];
+                        return facilityTypeList.some(function (type) {
+                            return type.name?.toLowerCase() === typeName;
+                        });
+                    };
+
+                    var setResultListToAll = function () {
+                        resultList = locationsData.response.list;
+                    };
+
+                    var setResultListToResearchOnly = function () {
+                        resultList = locationsData.response.list.filter(function (item) {
+                            return checkIfFacilityType(item, 'research');
+                        });
+                    };
+
+                    var setResultListToFRCOnly = function () {
+                        resultList = locationsData.response.list.filter(function (item) {
+                            return checkIfFacilityType(item, 'records');
+                        });
+                    };
+
+
+                    var setResultListToPLOnly = function () {
+                        resultList = locationsData.response.list.filter(function (item) {
+                            return checkIfFacilityType(item, 'presidential');
+                        });
+                    };
+
+                    var getFacilityIcon = function (item) {
+                        icon = []
+
+                        if (checkIfFacilityType(item, 'research')) {
+                            icon.push('<span class="glyphicon glyphicon-search"></span>');
+                        }
+
+                        if (checkIfFacilityType(item, 'records')) {
+                            icon.push('<span class="glyphicon glyphicon-folder-open"></span>');
+                        }
+
+                        if (checkIfFacilityType(item, 'presidential')) {
+                            icon.push('<span class="glyphicon glyphicon-book"></span>');
+                        }
+
+                        if (icon.length == 0) {
+                            icon.push('<span class="glyphicon glyphicon-map-marker"></span>');
+                        }
+
+                        return icon.join(' ');
+                    }
+
+                    var getFacilityCSSClass = function (item) {
+                        if (checkIfFacilityType(item, 'presidential')) {
+                            return 'library';
+                        } else if (checkIfFacilityType(item, 'records')) {
+                            return 'records';
+                        } else if (checkIfFacilityType(item, 'research')) {
+                            return 'research';
+                        } else {
+                            return '';
+                        }
+                    }
+
+                    var loadFacilityIndex = function () {
+                        $facilityIndex.empty();
+
+                        if (resultList.length > 0) {
+                            resultList.forEach(function (item, index) {
+                                var title = item.title || '';
+                                var addr1 = item.location?.street ? item.location.street + ', ' : '';
+                                var addr2 = item.location?.additional ? item.location.additional + ', ' : '';
+                                var city = item.location?.city ? item.location?.city + ', ' : '';
+                                var state = item.location?.province ? item.location?.province + ' ' : '';
+                                var zip = item.location?.postal_code ? item.location?.postal_code : '';
+                                var latitude = item.location?.latitude || '';
+                                var longitude = item.location?.longitude || '';
+                                var icon = getFacilityIcon(item);
+                                var cssClass = getFacilityCSSClass(item);
+
+                                var fullAddress = addr1 + addr2 + city + state + zip;
+
+                                var availableServices = item.available_services ? item.available_services.map(function (service) {
+                                    return service.name;
+                                }).join(', ') : '';
+
+                                var website = item.web_site || '';
+
+                                var facilityItem = $('<div id="facil-' + (index + 1) + '" class="facility ' + cssClass + ' facility-row"></div>');
+                                facilityItem.append('<div data-facil_index="' + (index + 1) + '"></div>');
+                                facilityItem.append('<h3>' + icon + ' ' + title + '</h3>');
+                                facilityItem.append('<address data-latlong="' + latitude + ',' + longitude + '">' + fullAddress + '</address>');
+                                facilityItem.append('<p><strong>Available services:</strong> ' + availableServices + '</p>');
+                                facilityItem.append('<p><a target="_blank" class="directions" href="https://bing.com/maps/default.aspx?rtp=adr.' + fullAddress.replace(' ', '+') + '">Get Directions</a> &middot; <a href="' + website + '">Visit Website</a></p>');
+
+                                $facilityIndex.append(facilityItem);
+                            });
+                        } else {
+                            $facilityIndex.append('<p>No facilities found for the selected filter.</p>');
+                        }
+                    };
+
+                    clearAllFilters();
+
+                    if (anchor === 'research-facilities') {
+                        $research.parent().addClass('active');
+                        setResultListToResearchOnly();
+                    } else if (anchor === 'frc') {
+                        $frc.parent().addClass('active');
+                        setResultListToFRCOnly();
+                    } else if (anchor === 'presidential-libraries') {
+                        $pl.parent().addClass('active');
+                        setResultListToPLOnly();
+                    } else {
+                        $all.parent().addClass('active');
+                        setResultListToAll();
+                    }
+
+                    loadFacilityIndex();
+
+                    $all.click(function (e) {
+                        clearAllFilters();
+                        $all.parent().addClass('active');
+                        setResultListToAll();
+                        loadFacilityIndex();
+                    });
+
+                    $research.click(function (e) {
+                        clearAllFilters();
+                        $research.parent().addClass('active');
+                        setResultListToResearchOnly();
+                        loadFacilityIndex();
+                    });
+
+                    $frc.click(function (e) {
+                        clearAllFilters();
+                        $frc.parent().addClass('active');
+                        setResultListToFRCOnly();
+                        loadFacilityIndex();
+                    });
+
+                    $pl.click(function (e) {
+                        clearAllFilters();
+                        $pl.parent().addClass('active');
+                        setResultListToPLOnly();
+                        loadFacilityIndex();
+                    });
+                }(jQuery));
+            </script>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,383 @@
+div.explorer-rg-tile {
+	padding: 0px 5px; 
+	position: relative; 
+	border: solid 1px rgba(0,0,0,0.12); 
+	box-shadow: 0 0px 6px rgba(0,0,0,0.26), 0 2px 2px rgba(0,0,0,0.23); 
+	margin: 2px; 
+	border-radius: 2px; 
+    height: 180px;}
+	
+.non-digi { background-color: lightgrey; }
+.digi { background-color: #9cdaf1; }
+.other-digi { background-color: #00cc99; }
+
+span.list-view-search ::-webkit-input-placeholder { font-size: 16px; }
+
+span.list-view-search :-ms-input-placeholder { font-size: 16px; }
+
+span.list-view-search ::placeholder { font-size: 16px; }
+
+span.list-view-search { display: inline-block; }
+
+.switch-header { font-size: 20px; color: #112E51; font-weight: bold;}
+
+.dc-switch-header { top: -10px; }
+
+span.toggle-text { color: #112E51; }
+
+span.rg {
+    font-size: 12px;
+    top: 0;
+    color: black; 
+	font-weight: none;}
+
+div.rg { 
+    position: absolute; 
+	background-color: white; 
+	box-shadow: 0 2px 2px rgba(0,0,0,0.26), 0 2px 6px rgba(0,0,0,0.23);
+    padding: 0px 5px 2px 5px; 
+	left: 0;
+	z-index: 999;}
+
+div.dot {
+    min-width: 52px;
+    text-align: center;
+    min-height: 15%;
+	margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #0071bd;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.26), 0 2px 6px rgba(0,0,0,0.23);
+	position: absolute;
+    bottom: 0;
+    right: 0; 
+	padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 1px;}
+
+div.explorer-rg-tile-title { 
+    min-height: 50%; 
+    margin-top: 30px; 
+    line-height: 1; 
+	text-align: center; }
+	
+div.explorer-rg-tile-title > span { z-index: 999; overflow-wrap: break-word;}
+
+.fa-container span {
+	font-size: 14px;
+    position: relative;
+    
+    /*font-weight: bold;*/ }
+
+span.dot-num {
+	bottom: 0;
+	right: 0;
+    position: absolute;
+	padding: 0px 2px 2px 0px;
+	color: white;
+    
+    /*font-weight: bold;*/ }
+	
+div.fa-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row wrap; }
+
+div.show-percent .digi-int { display: none; }
+
+div.show-int .digi-percent { display: none; }
+
+.non-last-items {flex-grow: 1;}
+
+.tooltip.bottom .tooltip-inner {
+    background-color: white; 
+    color: black;
+    padding: 10px;
+    /*border: solid 1px rgba(0,0,0,0.12);*/
+    box-shadow: 0 0px 6px rgba(0,0,0,0.26), 0 2px 2px rgba(0,0,0,0.23);} 
+
+.tooltip.bottom .tooltip-arrow { border-bottom-color: white !important;}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333333;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  top: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #333333;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+span.toggle-text {
+    margin-left: 10px;
+    /*font-size: 18px;*/ }
+
+span.list-view {
+    position: absolute;
+    right: 0;
+    /*font-size: 18px;*/ 
+    color: #555555; 
+	}
+
+span.list-view > a > span > i.fa.fa-list-ul.fa-lg {
+    margin-left: 15px;
+    color: #0071BD;
+}
+
+div.toggle-and-switch { 
+   /* margin: 0 10px;*/ 
+	position: relative; 
+	background-color: #cac9c5;
+    padding: 12px; }
+
+div.search-first-class { float: left; }
+div.switch-first-class { float: none; display: inline-block;}
+
+span.list-view-item {
+    margin-top: 6px;
+    display: inline-block;
+    float: right; }
+	
+#searchInput { 
+   display: inline-block;
+   width: 380px; 
+   border-radius: 8px; 
+   height: 35px; 
+   border: 0;
+   padding: 0.5rem;
+   /*grid-column: 2/4;
+   grid-row: 1; */}
+
+span.list-view-search .searchIcon {
+   /*padding: 0.5rem;
+   grid-row: 1;
+   grid-column: 3/4;
+   padding-right: 16px; */
+   position: absolute;
+   color: #0071bd;
+   margin-left: -30px;
+   padding-top: 8px; }
+
+div.real-switch { float: left; margin-top: 6px; }
+
+div.real-switch > label { margin-bottom: 0px !important; }
+
+.digobj>span.explorer-legend-percent { width: 520px; }
+
+
+.explorer_legend_common {
+  /* display: block;
+   position: absolute; */
+   height: 1em;
+   width: 1em;
+   margin-top: 3px;
+   float: left;
+}    
+
+.explorer_legend_1 {/* top: 42px;*/ background-color: #9cdaf1;}
+.explorer_legend_2 {/* top: 75px;*/ background-color: #0071bd;}
+.explorer_legend_3 {/* top: 108px;*/ background-color: #00cc99;}
+.explorer_legend_4 {/* top: 141px;*/ background-color: lightgrey;}
+
+@media only screen and (min-width: 992px) {
+   .explorer_legend_counter { padding-right: 80px !important; }
+}
+
+@media only screen and (max-width: 425px) {
+    div.fa-container {
+        display: flex;
+        flex-wrap: wrap; 
+		flex-direction: unset; }
+		
+	div.fa-container .explorer-rg-tile {
+        flex: 1 100%; }
+}
+
+@media only screen and (min-width: 1040px) {
+    .digobj_total>span.explorer-legend-total { left: 0; top: 126px;}
+}
+
+@media only screen and (min-width: 801px) {
+    div.real-switch {
+    float: left;
+    margin-left: 40px; }
+	
+}
+
+@media only screen and (min-width: 801px) and (max-width: 958px) {
+	span.list-view { bottom: 20px; }
+}
+
+@media only screen and (max-width: 1160px) {
+    #searchInput { width: 360px; }
+	span.list-view { bottom: 20px; /*margin-right: 15px; */}
+	div.real-switch { /*float: right;*/ }
+}
+
+@media only screen and (max-width: 1050px) {
+    #searchInput { width: 320px; }
+}
+
+@media only screen and (max-width: 1118px) {
+    .switch-header { top: -10px; }
+}
+
+@media only screen and (max-width: 966px) {
+    #searchInput { width: 260px; }
+	span.list-view-search ::-webkit-input-placeholder { opacity: 0; }
+    span.list-view-search :-ms-input-placeholder { opacity: 0; }
+    span.list-view-search ::placeholder { opacity: 0; }
+}
+
+@media only screen and (max-width: 1040px) {
+    .digobj_total>span.explorer-legend-total { left: 0px; top: 138px; }
+    #findingaid_digital_data { margin-bottom: 160px; }
+	
+}
+
+@media only screen and (max-width: 600px) { 
+    .digobj_total>span.explorer-legend-total { left: 0px; top: 128px; }
+    span.list-view > a > span > i.fa.fa-list-ul.fa-lg { float: left; margin-right: 10px; line-height:initial; }
+	span.list-view-item { float: none; }
+}
+
+@media only screen and (max-width: 320px) {
+    .digobj>span.explorer-legend-percent { width: 200px; }
+    .digobj_total>span.explorer-legend-total { top: 218px; }
+    #findingaid_digital_data { margin-bottom: 260px; }
+    span.list-view { top: -30px; left: 0; bottom: auto;}
+	#searchInput { width: 220px; }
+	div.toggle-and-switch { padding: 60px 20px;}
+    .switch-header { top: -40px; }
+	span.list-view-search ::-webkit-input-placeholder { opacity: 0; }
+    span.list-view-search :-ms-input-placeholder { opacity: 0; }
+    span.list-view-search ::placeholder { opacity: 0; }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    .digobj>span.explorer-legend-percent { width: 260px; }
+    .digobj_total>span.explorer-legend-total { top: 198px; }
+    #findingaid_digital_data { margin-bottom: 260px; }
+    span.list-view { top: -30px; left: 0; bottom: auto; }
+	div.toggle-and-switch { padding: 60px 10px; }
+	#searchInput { width: 260px; }
+    .switch-header { top: -40px; }
+    span.list-view-search ::-webkit-input-placeholder { opacity: 0; }
+    span.list-view-search :-ms-input-placeholder { opacity: 0; }
+    span.list-view-search ::placeholder { opacity: 0; }
+	
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    .digobj>span.explorer-legend-percent { width: 300px; }
+    .digobj_total>span.explorer-legend-total { top: 178px; }
+    #findingaid_digital_data { margin-bottom: 220px; }
+    span.list-view { top: -30px; left: 0; bottom: auto; }
+    div.toggle-and-switch { padding: 60px 30px;}
+	#searchInput { width: 320px; }
+    .switch-header { top: -40px; }
+	span.list-view-search ::-webkit-input-placeholder { opacity: 0; }
+    span.list-view-search :-ms-input-placeholder { opacity: 0; }
+    span.list-view-search ::placeholder { opacity: 0; }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 520px) {
+    .digobj>span.explorer-legend-percent { width: 360px; }
+    .digobj_total>span.explorer-legend-total { top: 158px; }
+    #findingaid_digital_data { margin-bottom: 200px; }
+    span.list-view { top: -30px; left: 0; bottom: auto;}
+    div.toggle-and-switch { padding: 60px 50px; }
+	#searchInput { width: 320px; }
+	.switch-header { top: -40px; }
+	span.list-view-search ::-webkit-input-placeholder { opacity: 0; }
+    span.list-view-search :-ms-input-placeholder { opacity: 0; }
+    span.list-view-search ::placeholder { opacity: 0; }
+}
+
+@media only screen and (min-width: 521px) and (max-width: 600px) {
+    .digobj>span.explorer-legend-percent { width: 460px; }
+    .digobj_total>span.explorer-legend-total { top: 158px; }
+    #findingaid_digital_data { margin-bottom: 180px; }
+    span.list-view { top: -30px; left: 0; bottom: auto;}
+	#searchInput { width: 320px; }
+	.switch-header { top: -40px; }
+	div.toggle-and-switch { padding: 60px 60px; }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .digobj>span.explorer-legend-percent { width: 550px; }
+	div.toggle-and-switch { padding: 60px 60px; }
+	span.list-view { top: -30px; left: 0; bottom: auto;}
+	#findingaid_digital_data { margin-bottom: 180px; }
+    .switch-header { top: -50px; }
+	#searchInput { width: 320px; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+    .digobj>span.explorer-legend-percent { width: 550px; }
+	div.toggle-and-switch { padding: 60px 200px; }
+	span.list-view { top: -30px; left: 0; bottom: auto;}
+	#findingaid_digital_data { margin-bottom: 180px; }
+    .switch-header { top: -50px; }
+	#searchInput { width: 320px; }
+	.toggle-and-switch > .col-sm-3 { width: 100%; text-align: center; }
+	.toggle-and-switch > .col-sm-5 { width: 100% }
+	.toggle-and-switch > .col-sm-4 { width: auto; }
+	div.real-switch { float: left; }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     span.list-view-item { float: none; }
+}

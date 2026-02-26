@@ -1,0 +1,104 @@
+body a#varnish_purge{   
+  position:fixed;
+  
+  top:50%;
+  left:100%;
+  
+  position: fixed;
+  background: #205081;
+  padding: 5px;
+  border: 2px solid white;
+  border-top: none;
+  font-weight: bold;
+  color: white !important;
+  display: block;
+  white-space: nowrap;
+  text-decoration: none !important;  
+  font-size: 12px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 5px 5px;
+  transform: rotate(90deg);
+  transform-origin: top left;  
+}
+
+#varnish_purge_blanket{
+  background: black;
+  height: 100%;
+  left: 0;
+  opacity: .5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 900000;  
+}
+
+#varnish_purge_pop{
+  background: white;
+  border: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 9000033;
+  border-radius: 4px;
+  background-clip: padding-box;
+  overflow: hidden;
+  width: 600px;
+  height:300px;  
+  color: #666;
+  /*height: calc(100% - 100px);*/
+}
+
+#varnish_purge_pop h2{
+  background: #f5f5f5;
+  color: #666;
+  font-size: 12pt;
+  margin: 0;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-weight:bold;
+  border-bottom:1px solid lightgrey;
+}
+
+#varnish_purge_pop label{
+  font-size: 11pt;
+}
+
+#varnish_purge_pop form{
+  margin: 15px 20px;
+}
+
+#varnish_purge_pop textarea{
+  width:100%;
+}
+
+#varnish_purge_intput{
+  margin-bottom:0px;
+}
+#varnish_purge_list_desc{
+  margin-top:2px;
+  padding-top:0px;  
+}
+#varnish_purge_submit{
+  background: #3572b0;
+  border-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased; 
+  cursor: pointer;
+  margin-right:10px;
+  padding:5px 5px;
+  border-radius: 3px;
+}
+
+#varnish_purge_submitblk{
+  text-align:right;
+  margin-right:5%;
+}
+
+#varnish_purge_pop form textarea{
+  border:1px solid lightgrey;
+}

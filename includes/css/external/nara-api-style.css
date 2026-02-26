@@ -1,0 +1,73 @@
+.nara-catalog-api-call{    
+}
+
+.nara-catalog-api-call ul{
+  list-style-type: none;  
+}
+.nara-catalog-api-call ul.imageul{
+  text-align: center;
+}
+.nara-catalog-api-call ul li.imagelist{
+  display:inline-block;
+  background-image: none !important;
+  
+  margin: 1px 0px;
+  padding: 0 1px!important;
+}
+
+.nara-catalog-api-call ul li.filelist{
+  display:block;
+  background-image: none !important;
+  margin: 5px 0px;
+  padding:0 0;
+  clear:both;
+  
+}
+
+.nara-catalog-api-call ul li.filelist>a{
+  margin:0 0;
+  padding: 0 0;
+  display:block;
+  float:left;
+}
+
+.nara-catalog-api-call ul li.imagelist a{
+  margin:0 0;
+  padding: 0 0;
+}
+.nara-catalog-api-call ul li.imagelist img{  
+  height:180px;
+  margin:0 0;
+  padding: 0 0;
+}
+
+
+div.loading-icon{  
+  background:url(../img/ajax-loader.gif) center center no-repeat;
+  height:40px;
+  width:100%;
+  clear:both;
+  margin:0px 0px;
+}
+
+.nara-catalog-api-call .loadmore{
+  margin-top:10px;
+  text-align:center;
+  
+  
+}
+
+.nara-catalog-api-call .loadmore button.btn{
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 2px #0071bc;
+  color: #0071bc;
+  font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    padding: .5em 1.2em;
+}
+
+.nara-catalog-api-call .fileul .filelist>a img{
+  margin-right:10px; 
+  margin-bottom:10px;
+}
