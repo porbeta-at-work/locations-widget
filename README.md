@@ -37,13 +37,10 @@ When you're ready to deploy your changes to Drupal:
 npm run build
 ```
 
-This generates multiple options in the `dist/` folder:
+This generates the following files in the `dist/` folder:
 
-- **`complete-widget.html`** - Full component with info boxes (matches original page exactly)
-- **`minimal-widget.html`** - Just the locations filter (for custom layouts)  
-- **`widget-html.html`** - HTML structure only (for separate CSS/JS integration)
-- **`widget-styles.css`** - CSS styling (for theme integration)
-- **`widget-script.js`** - JavaScript functionality (for theme assets)
+- **`widget-content.html`** - Complete widget content ready to paste into Drupal
+- **`README.md`** - Integration instructions and dependencies
 
 ## Features
 
@@ -52,14 +49,6 @@ This generates multiple options in the `dist/` folder:
 - Responsive Bootstrap styling
 - Sample location data for testing
 - Build script to generate Drupal-compatible output
-
-## Dependencies
-
-The component uses:
-- jQuery 3.6.0
-- Bootstrap 3.4.1 (CSS framework)
-- Bootstrap Glyphicons (icons)
-- Font Awesome 4.7.0 (additional icons)
 
 ## Development Workflow
 
